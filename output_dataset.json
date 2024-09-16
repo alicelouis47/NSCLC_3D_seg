@@ -1,0 +1,33 @@
+{
+    "description": "",
+    "labels": {
+        "1": "adenocarcinoma",
+        "2": "squamous_cell_carcinoma",
+        "3": "large_cell",
+        "4": "nos"
+    },
+    "licence": "hands off!",
+    "modality": {
+        "0": "FLAIR",
+        "1": "T1w",
+        "2": "t1gd",
+        "3": "T2w"
+    },
+    "name": "Lung_Tumor",
+    "numTest": 2,
+    "numTraining": 1,
+    "reference": "",
+    "release": "0.0",
+    "tensorImageSize": "4D",
+    "test": [
+        "./imagesTs/Lung1_009.nii.gz",
+        "./imagesTs/Lung1_010.nii.gz"
+    ],
+    "training": [
+        {
+            "PatientID" : "LUNG1-001",
+            "image": "./imagesTr/M0_1.nii.gz",
+            "label": "./labelsTr/LUNG1_001.nii.gz"
+        }
+    ]
+}
